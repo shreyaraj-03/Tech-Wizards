@@ -1,0 +1,54 @@
+{% extends 'accounts/home.html' %}
+
+{% block body %}
+
+    <h2>PERSONAL INFO</h2>
+    <form action="#" method="post" id="mainForm">
+      <label>Upload Profile Picture</label><br />
+        <input type="file" name="fileupload" accept="image/*" /><br />
+      <div class="heading">
+      <label>First Name</label><br />
+      <input type="text" name="first name">
+      </div>
+      <div class="heading">
+        <label>Last Name</label><br />
+        <input type="text" name="last name">
+        </div><br />
+        <div class="heading">
+          <label>City</label><br>
+          <input type="text" name=city>
+        </div>
+        <div class="heading">
+          <label>State</label><br>
+          <input type="text" name="state">
+        </div><br />
+        <label>Pin Code</label><br />
+        <input type="text" name="pin code"> <br />
+        <label>Phone No.</label><br />
+        <input type="number" name="phone no." /><br />
+        <label>Email Address</label><br />
+        <input type="email" name="email address" /><br />
+          <a class="idlinks link" style="color:#0066ff"><span class="add1">➕</span> Add Social Links</a>
+          <div class="sociallinks">
+          <div class="heading">
+            <br /><label >Social Website</label><br />
+          <input type="text" list="socialId" name="sicialId">
+          <datalist id="socialId">
+            <option value="Twitter">
+            <option value="LinkedIn">
+            <option value="Github">
+          </datalist>
+            </div>
+          <div class="heading">
+            <label>Social Link</label><br />
+            <input type="text">
+            <span id="del"><button>DEL</button></span>
+          </div><br />
+          <a class="link" style="color:#0066ff"><span class="add2">+Add one more</span></a>
+          </div>
+        <br />
+      </form>
+      <a href="resume2.html"><button class="nextbutton">NEXT: SKILLS AND INTERESTS</button></a>
+      <script src="resume1.js" charset="utf-8"></script>
+  
+{% endblock body %}
