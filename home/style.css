@@ -1,0 +1,155 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/3025.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+   /*
+   */
+
+
+}
+.navbar{
+    width:85%;
+    height:15%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login
+{
+    color:rgb(255, 255, 255) ;
+    padding: 10px 25px;
+    font-weight:bold ;
+    font-size: 16px;
+    background: transparent;
+    border:3px solid blueviolet;
+    margin: 15cm 0px 0px 30cm;
+    border-radius: 35px;
+    outline: none;
+    cursor: pointer;
+}
+.signup
+{
+    color:rgb(255, 255, 255) ;
+   
+    font-weight:bold ;
+    font-size: 16px;
+
+    
+    margin: -4.08cm 87px 35px 35cm;
+   
+    cursor: pointer;
+}
+.acc
+{
+    background: transparent;
+    color: cornsilk;
+    margin:130px 14px 136px 30cm; 
+    display: block;
+   
+}
+.acc2
+{
+    background: transparent;
+    color: cornsilk;
+    margin:-1.39cm 79px 35px 36.9cm;
+    display: block;
+   
+}
+
+.content
+{
+
+}
+.bubbles img
+{
+    width: 50px;
+    animation: bubble 5s linear infinite;
+}
+.bubbles{
+    width:100%;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   bottom: -100px;
+}
+@keyframes bubble{
+
+    0%{
+        transform :translateY(0vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform :translateY(-100vh);
+        opacity: 0;
+    }
+
+}
+
+
+
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width:100px ;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 3s;
+    width: 30px;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 4s;
+    width:50px ;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 5s;
+    width: 70px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 1s;
+    width: 30px;
+}
+
+.name
+{
+    background: transparent;
+    width: 100%;
+}
+input,textarea{
+    border: 2px solid black;
+    border-radius: 6px;
+    outline: none;
+    width: 20%;
+    margin: 1cm 0px 20px 30cm;
+   padding: 7px;
+   font-size:16px; 
+}
+label,input
+{
+    display: block;
+}
+
