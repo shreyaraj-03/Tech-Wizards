@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>resume</title>
+    <link rel="stylesheet" href="resume.css">
+  </head>
+  <body>
+    <div class="form">
+      <h2>PERSONAL INFO</h2>
+      <label>Upload Profile Picture</label><br />
+        <input type="file" name="fileupload" accept="image/*" /><br />
+      <div class="heading">
+      <label>First Name</label><br />
+      <input type="text" name="first name">
+      </div>
+      <div class="heading">
+        <label>Last Name</label><br />
+        <input type="text" name="last name">
+        </div><br />
+        <div class="heading">
+          <label>City</label><br>
+          <input type="text" name="city">
+        </div>
+        <div class="heading">
+          <label>State</label><br>
+          <input type="text" name="state">
+        </div><br />
+        <label>Pin Code</label><br />
+        <input type="text" name="pin code"> <br />
+        <label>Phone No.</label><br />
+        <input type="number" name="phone no." /><br />
+        <label>Email Address</label><br />
+        <input type="email" name="email address" /><br />
+          <a class="idlinks" style="color:#0066ff"><span class="add1 link">➕ Add Social Links</span></a>
+          <div class="sociallinks">
+          <div class="heading">
+            <ul class="addittion">
+          <li>
+          <br /><label >Social Website</label><br />
+          <input type="text" list="socialId" name="sicialId">
+          <datalist id="socialId">
+            <option value="Twitter">
+            <option value="LinkedIn">
+            <option value="Github">
+          </datalist>
+            </div>
+          <div class="heading">
+            <label>Social Link</label><br />
+            <input size="30%"type="text">
+            <span class="del"><button class="link">DEL</button></span>
+          </div><br />
+          <a style="color:#0066ff"><span class="add2 link">+Add one more</span></a>
+            </li>
+          </ul>
+          </div>
+        <br />
+
+      <a href="resume2.html"><button class="nextbutton">NEXT: SKILLS AND INTERESTS</button></a>
+      <script src="resume1.js" charset="utf-8"></script>
+        </div>
+  </body>
+</html>
