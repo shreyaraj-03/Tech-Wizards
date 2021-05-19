@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title></title>
   </head>
   <link rel="stylesheet" href="resume.css">
   <body>
+    <div class="form">
     <h2>SKILLS AND INTERESTS</h2>
-  <form>
-    <label>SKILLS</label><br />
-    <ul class="list">
-        <li>
-          <input type="text" name="skills"><span class="add"> ➕</span><br />
-          </li>
-    </ul>
-    <label>Programming Language and Framework</label>
+
+    <label class="id_label">Skills</label><br />
+
+          <input class="id_input" type="text" name="skills">   <button class="button"> ➕</button><br />
+    <ul class="class_list"></ul>
+    <label class="id_label">Programming Language and Framework</label>
     <div>
-      <ul class="list">
-        <li>
+
             <div class="heading">
-                <input type="text" name="techInput"> <br />
+                <input class="id_input" type="text" name="techInput"> <br />
               </div>
               <div class="heading">
-                <input list="tech" name="tech" />
+                <input class="id_input" list="tech" name="tech" />
                  <datalist id="tech">
                     <option value="basic">
                     <option value="intermadiate">
                     <option value="advance">
                     <option value="expert">
-              </datalist> <span class="add">➕</span><br />
+              </datalist> <button class="button">➕</button><br />
                 </div>
-         </li>
-      </ul>
+      <ul class="class_list"></ul>
       </div>
-     <label>Hobbies</label>
-     <ul>
-       <li>
-         <input type=textarea> <span class="add">➕</span>
-         </li>
-       </ul>
-  </form>
+     <label class="id_label">Hobbies</label><br />
+
+         <input class="id_input" type="text"> <button class="button">➕</button>
+       <ul class="class_list"></ul>
+
   <br /><a href="resume1.html"><button class="previous">BACK</button></a>
   <a href="resume3.html"><button class="nextbutton">NEXT: EDUCATIONAL INFO</button></a>
+  <script type="text/javascript" src="resumeAdd.js"></script>
+    </div>
   </body>
 </html>

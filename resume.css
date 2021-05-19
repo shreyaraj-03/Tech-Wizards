@@ -7,7 +7,7 @@ h2 {
 .sociallinks{
   display:none;
 }
-form {
+.form {
   margin-left:20%;
 }
 input{
@@ -43,3 +43,4 @@ input{
   cursor: pointer;
   color: #003d99;
 }
+
