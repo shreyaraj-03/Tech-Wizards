@@ -14,22 +14,32 @@
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background: #7abecc !important;
+            width: 100%;
+
+
+         background-position: center;
+         position: relative;
+         background-size: cover;
+         overflow: hidden;
+            {% load static %}
+            background-image: url("{%  static '/images/3025.jpg' %}") ;
 		}
 		.user_card {
+
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: #74cfbf;
+			background: transparent;
 			position: relative;
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
 			padding: 10px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			<!-- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			border-radius: 5px;
+            -->
 
 		}
 
@@ -38,14 +48,23 @@
 		}
 
 		#form-title{
-			color: #fff;
+			 color:rgb(255, 255, 255) ;
 			
 		}
 
 		.login_btn {
-			width: 100%;
-			background: #33ccff !important;
-			color: white !important;
+			width: 60%;
+
+             color:rgb(255, 255, 255) ;
+            padding: 10px 25px;
+            font-weight:bold ;
+            font-size: 16px;
+            background: transparent;
+            border:3px solid blueviolet;
+
+            border-radius: 35px;
+            outline: none;
+            cursor: pointer;
 		}
 		.login_btn:focus {
 			box-shadow: none !important;
@@ -72,10 +91,79 @@
 			padding: 10px;
 			margin-top: 10px;
 		}
+        .bubbles img
+{
+    width: 50px;
+    animation: bubble 5s linear infinite;
+}
+        .bubbles{
+    width:100%;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   bottom: -100px;
+}
+@keyframes bubble{
+
+    0%{
+        transform :translateY(0vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform :translateY(-100vh);
+        opacity: 0;
+    }
+
+}
+
+
+
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width:100px ;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 3s;
+    width: 30px;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 4s;
+    width:50px ;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 5s;
+    width: 70px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 1s;
+    width: 30px;
+}
 	</style>
 
 </head>
-<body>
+<body >
+<div class="bubbles">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+</div>
 	<div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
@@ -88,6 +176,7 @@
 					<form method="POST" action="">
 						{% csrf_token %}
 						<div class="input-group mb-3">
+
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
