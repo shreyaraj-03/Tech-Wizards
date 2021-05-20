@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>resume</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+
+  
+    <div class="a2">
+      <div class="form">
+        <h2>PERSONAL INFO</h2>
+        <label>Upload Profile Picture</label><br />
+        <input type="file" accept="image/*" class="inpfil" style="cursor: pointer; " /><br />
+        <div class="heading">
+          <label>First Name</label><br />
+          <input type="text" name="first name" id="firnam" placeholder="Enter Here">
+        </div>
+        <div class="heading">
+          <label>Last Name</label><br />
+          <input type="text" placeholder="Enter Here">
+        </div><br />
+        <div class="heading">
+          <label>City</label><br>
+          <input type="text" placeholder="Enter Here">
+        </div>
+        <div class="heading">
+          <label>State</label><br>
+          <input type="text" placeholder="Enter Here">
+        </div><br />
+        <label>Pin Code</label><br />
+        <input type="text" placeholder="Enter Here"> <br />
+        <label>Phone No.</label><br />
+        <input type="number" placeholder="Enter Here" /><br />
+        <label>Email Address</label><br />
+        <input type="email" placeholder="Enter Here" /><br />
+        <a class="idlinks" style="color:#0066ff"><span class="add1 link">➕ Add Social Links</span></a>
+        <div class="sociallinks" id="a1">
+          <div class="heading">
+            <ul class="addittion">
+              <li>
+                <br /><label>Social Website</label><br />
+                <input type="text" list="socialId" placeholder="Enter/Select">
+
+                <datalist id="socialId">
+                  <option value="Twitter">
+                  <option value="LinkedIn">
+                  <option value="Github">
+                </datalist>
+          </div>
+          <div class="heading">
+            <label>Social Link</label><br />
+            <input width="30%" type="text" placeholder="Enter here">
+            <span class="del"><button class="link">DEL</button></span>
+          </div><br />
+          <a style="color:#0066ff"><span class="add2 link" id="b1">+Add one more</span></a>
+          </li>
+          </ul>
+        </div>
+        <br />
+       
+        <a href="resume2.html"><button onclick="inputResume1()" class="nextbutton" style="cursor: pointer; width: 30%; padding:13px 28px;">NEXT:
+            SKILLS AND INTERESTS</button></a>
+        <script src="resume1.js" charset="utf-8"></script>
+        <!--<script src="resumeAdd.js" charset="utf-8"></script>-->
+        <script src="template.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
