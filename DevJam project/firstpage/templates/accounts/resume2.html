@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+    .a2
+{
+ width: 100%;
+  height: 60%;
+    {% load static %}
+  background-image: url("{%  static '/images/back.jpg' %}") ;
+
+  background-position:center;
+  position:relative;
+  background-size: cover;
+  overflow:hidden;
+}
+</style>
+  <title></title>
+</head>
+<link rel="stylesheet" href="./static/css/resume.css">
+
+<body>
+
+  <div class="a2">
+    <div class="form" id="form2nd">
+
+
+      <h1>SKILLS AND INTERESTS</h1>
+
+      <label class="id_label">Skills</label><br />
+
+
+      <div id="x1">
+        <input class="id_input skillsF" type="text"> <button class="button" id="btnx"> ➕</button>
+        <button class="delbutton1"> ➖</button><br />
+        <ul class="class_list"></ul>
+
+
+      </div>
+      <label class="id_label">Programming Language and Framework</label><br>
+
+      <div id="levellang">
+        <div class="heading">
+          <input class="id_input codeF" list="tech" />
+          <datalist id="tech">
+            <option value="basic">
+            <option value="intermadiate">
+            <option value="advance">
+            <option value="expert">
+          </datalist> <br />
+
+        </div>
+
+
+        <div class="heading" id="y1">
+          <input class="id_input rateF" type="text">
+          <button class="button" id="btny">➕</button>
+          <button class="delbutton2"> ➖</button><br />
+        </div>
+
+      </div>
+      <ul class="class_list"></ul>
+
+      <label class="id_label">Hobbies</label><br />
+      <div id="z1">
+        <input class="id_input hobbiesF" type="text"> <button class="button" id="btnz">➕</button>
+        <button class="delbutton3"> ➖</button><br />
+        <ul class="class_list"></ul>
+      </div>
+    </div>
+    <br />
+    <button onclick="inputResume2(); goForward();" class="nextbutton">NEXT: EDUCATIONAL INFO</button>
+
+
+
+
+
+
+
+
+    <script>
+
+      function goForward() {
+
+
+        location.href = "/resume3";
+        history.forward();
+
+      }
+    </script>
+
+  <!--c4-->  <br><a href=/resume1><button class="previous">BACK</button></a>
+    <script type="text/javascript" src="./static/javascript/resumeAdd.js"></script>
+  </div>
+  <script src="./static/javascript/resume1.js" charset="utf-8"></script>
+  <!--<script src="resumeAdd.js" charset="utf-8"></script>-->
+  <script src="./static/javascript/template.js" charset="utf-8"></script>
+</body>
+
+</html>

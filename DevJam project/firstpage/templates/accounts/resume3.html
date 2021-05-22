@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+
+  <style>
+
+    .a2
+{
+ width: 100%;
+  height: 60%;
+    {% load static %}
+  background-image: url("{%  static '/images/back.jpg' %}") ;
+
+  background-position:center;
+  position:relative;
+  background-size: cover;
+  overflow:hidden;
+}
+</style>
+  <link rel="stylesheet" href="./static/css/resume.css" />
+</head>
+
+<body>
+  <div class="a2">
+
+
+    <div class="form">
+      <h1>ACADEMIC QUALIFICATION</h1>
+
+      <h2>Intermediate</h2><br />
+      <label>School Name</label><br />
+      <input id="schoolNameF" type="text" placeholder="Enter Here"><br />
+      <div class="heading">
+        <label>City/Town</label><br />
+        <input id="citysF" type="text" placeholder="Enter Here">
+      </div>
+      <div class="heading">
+        <label>State</label><br />
+        <input id="statesF" type="text" placeholder="Enter Here"><br />
+      </div><br />
+      <label>passing out year</label><br />
+      <input id="schoolYearF" style="width:20%" type="number" placeholder="Enter Here" />
+      <h2>College</h2>
+      <label>College Name</label><br />
+      <input id="collegeNameF" type="text" placeholder="Enter Here"><br />
+      <div class="heading">
+        <label>City/Town</label><br />
+        <input id="citycF" type="text" placeholder="Enter Here">
+      </div>
+      <div class="heading">
+        <label>State</label><br />
+        <input id="statecF" type="text" placeholder="Enter Here"><br />
+      </div><br />
+      <label>Batch year</label><br />
+      <input id="collegeYearF" type="text" placeholder="Enter Here"><br />
+      <label>Course</label><br />
+      <input id="courseF" type="text" placeholder="Enter Here"><br />
+
+
+      <button onclick="inputResume3(); goForward();" class="nextbutton">NEXT:ACHIEVEMENTS</button>
+
+
+      <script>
+
+
+
+        function goForward() {
+
+
+          location.href = "/resume4";
+          history.forward();
+        }
+
+      </script>
+
+
+
+
+    </div>
+  <!--c6-->  <br /> <a href="/resume2"><button class="previous">BACK</button></a>
+    <script src="./static/javascript/resume1.js" charset="utf-8"></script>
+    <!--<script src="resumeAdd.js" charset="utf-8"></script>-->
+    <script src="./static/javascript/template.js" charset="utf-8"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href="{%  static '/css/resume.css' %}">
+    <title>MNNIT Home</title>
+
+
+
+    <style>
+  #navv{
+            margin: 0;
+			padding: 0;
+			height: 100vh;
+            width: 100%;
+
+
+         background-position: center;
+         position: relative;
+         background-size: cover;
+         overflow: hidden;
+              {% load static %}
+            background-image: url("{%  static '/images/4.jpg' %}") ;
+
+  }
+
+
+
+
+
+
+
+
+    .bubbles img
+{
+    width: 50px;
+    animation: bubble 5s linear infinite;
+}
+        .bubbles{
+    width:100%;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   bottom: -100px;
+}
+@keyframes bubble{
+
+    0%{
+        transform :translateY(0vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform :translateY(-100vh);
+        opacity: 0;
+    }
+
+}
+
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width:100px ;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 3s;
+    width: 30px;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 4s;
+    width:50px ;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 5s;
+    width: 70px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 1s;
+    width: 30px;
+}
+
+h1
+{
+    font-size: 60px;
+    color: #d6e0f5;
+    font-style: italic;
+}
+h4{
+    color: #ccffff;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+  </style>
+</head>
+
+<body id="navv">
+
+
+<div class="bubbles">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+        <img src="{%  static '/images/bubble.png' %}" alt="">
+
+
+</div>
+
+{% include 'accounts/navbar.html' %}
+    {% block body %}
+<h1>
+Build resume in minutes!!
+</h1>
+        <br><br>
+      <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Here you can build your CV easily and save it on your device<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You just need to fill the details in the form
+          with the profile picture and you can get the CV in proper template :) </h4>
+    {% endblock body %}
+
+</body>
+</html>
