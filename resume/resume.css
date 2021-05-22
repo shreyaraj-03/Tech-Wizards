@@ -4,17 +4,17 @@
   box-sizing: border-box;
   font-family:'Roboto',sans-serif;
 }*/
-.a2 
+.a2
 {
   background-image: url("images/eric-muhr-8zskmq_yL6Q-unsplash.jpg");
   width: 100%;
-  height: 100%;
+  height: 60%;
   background-position:center;
   position: relative;
   background-size: cover;
   overflow: hidden;
 }
-h2 {
+h1 {
   text-align: center;
 }
 .heading{
@@ -29,9 +29,9 @@ h2 {
 /*input {
   width: 60%;
   padding:12px 20px;
-  
+
   margin: 8px 0;
- }*/ 
+ }*/
 input,textarea{
   border: 2px solid black;
   border-radius: 6px;
@@ -43,7 +43,7 @@ input,textarea{
  box-sizing:border-box;
 
  padding: 7px;
- font-size:16px; 
+ font-size:16px;
 }
 .inpfil
 {
@@ -83,5 +83,52 @@ background: none;
 {
 cursor: pointer;
 }
+label{
+font-weight:500;
+font-family:serif;
+font-size: 20px;
 
+}
+button
+{
+  cursor: pointer;
+}
 
+.nextbutton
+{
+  color:rgba(8, 1, 6, 0.548) ;
+  padding: 10px 25px;
+  font-weight:bold ;
+  font-size: 16px;
+  background:rgb(153, 10, 153) ;
+
+  border:3px solid blueviolet;
+  border-radius: 35px;
+  outline: none;
+  cursor: pointer;
+}
+#bres
+{
+
+  padding: 10px 25px;
+  font-weight:bold ;
+  font-size: 16px;
+color: azure;
+  border-radius: 35px;
+  outline: none;
+  cursor: pointer;
+}
+
+.previous
+{
+  color:rgba(8, 1, 6, 0.548) ;
+  padding: 10px 25px;
+  font-weight:bold ;
+  font-size: 16px;
+  background:rgb(125, 125, 202) ;
+
+  border:3px solid blueviolet;
+  border-radius: 35px;
+  outline: none;
+  cursor: pointer;
+}

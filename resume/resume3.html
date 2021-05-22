@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="resume.css" />
-  </head>
-  <body>
-    <div class="form ">
-    <h2>ACADEMIC QUALIFICATION</h2>
 
-      <h3>Intermediate</h3><br />
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="resume.css" />
+</head>
+
+<body>
+  <div class="a2">
+
+
+    <div class="form">
+      <h1>ACADEMIC QUALIFICATION</h1>
+
+      <h2>Intermediate</h2><br />
       <label>School Name</label><br />
-      <input type="text"placeholder="Enter Here"><br />
+      <input id="schoolNameF" type="text" placeholder="Enter Here"><br />
       <div class="heading">
         <label>City/Town</label><br />
-        <input type="text"placeholder="Enter Here">
-        </div>
+        <input id="citysF" type="text" placeholder="Enter Here">
+      </div>
       <div class="heading">
         <label>State</label><br />
-        <input type="text"placeholder="Enter Here"><br />
+        <input id="statesF" type="text" placeholder="Enter Here"><br />
       </div><br />
       <label>passing out year</label><br />
-      <input style="width:20%" type="number"placeholder="Enter Here" />
-      <h3>College</h3>
+      <input id="schoolYearF" style="width:20%" type="number" placeholder="Enter Here" />
+      <h2>College</h2>
       <label>College Name</label><br />
-      <input type="text"placeholder="Enter Here"><br />
+      <input id="collegeNameF" type="text" placeholder="Enter Here"><br />
       <div class="heading">
         <label>City/Town</label><br />
-        <input type="text"placeholder="Enter Here">
-        </div>
+        <input id="citycF" type="text" placeholder="Enter Here">
+      </div>
       <div class="heading">
         <label>State</label><br />
-        <input type="text"placeholder="Enter Here"><br />
+        <input id="statecF" type="text" placeholder="Enter Here"><br />
       </div><br />
-        <label>Batch year</label><br />
-        <input type="text"placeholder="Enter Here"><br />
-        <label>Course</label><br />
-        <input type="text"placeholder="Enter Here"><br />
+      <label>Batch year</label><br />
+      <input id="collegeYearF" type="text" placeholder="Enter Here"><br />
+      <label>Course</label><br />
+      <input id="courseF" type="text" placeholder="Enter Here"><br />
 
-    
-     <a href="resume4.html"><button class="nextbutton">NEXT:ACHIEVEMENTS</button></a>
-</div>
-<br />  <a href="resume2.html"><button class="previous">BACK</button></a>
-  </body>
+
+      <button onclick="inputResume3(); goForward();" class="nextbutton">NEXT:ACHIEVEMENTS</button>
+
+
+      <script>
+
+
+
+        function goForward() {
+
+
+          location.href = "resume4.html";
+          history.forward();
+        }
+
+      </script>
+
+
+
+
+    </div>
+  <!--c6-->  <br /> <a href="resume2.html"><button class="previous">BACK</button></a>
+    <script src="resume1.js" charset="utf-8"></script>
+    <!--<script src="resumeAdd.js" charset="utf-8"></script>-->
+    <script src="template.js" charset="utf-8"></script>
+  </div>
+</body>
+
 </html>
